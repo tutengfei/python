@@ -16,7 +16,7 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
 - [大数据与人工智能相关](#大数据与人工智能相关)
 - [网络爬虫](#网络爬虫)
 - [测试与代码分析审核](#测试与代码分析审核)
-- [密码破解相关](#密码破解相关)
+- [安全与破解相关](#安全与破解相关)
 - [图表及图像相关](#图表及图像相关)
 - [运维相关](#运维相关)
 - [树莓派](#树莓派)
@@ -59,7 +59,9 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
  * [tornado](https://github.com/tornadoweb/tornado) - tornado是非阻塞式 Web 服务器框架，而且速度相当快。[官网](http://www.tornadoweb.org)，[Introduction to Tornado 中文翻译](http://demo.pythoner.com/itt2zh/index.html) , [中文教程](http://www.tornadoweb.cn/ )。
 
 ##### 其他网页框架
- * [Bottle](http://bottlepy.org/docs/dev/index.html) - Bottle是一个小型的轻量网络开发框架，同时速度也很快。
+ * [Bottle](http://bottlepy.org/docs/dev/index.html) - Bottle是一个快速、简单、轻量的WSGI微型web框架。利用Bottle构建小型站点和API的时间以秒计算。这个框架只有一个py文件，可以把它放进任何目录。
+ * [Tyrion](https://github.com/WuPeiqi/Tyrion) - 支持多WEB框架Form表单验证组件，其完美的支持Tornado、Django、Flask、Bottle Web框架。
+
  * [Wooey](https://github.com/wooey/Wooey) - Wooey 是一个简单的Python脚本的Web UI 界面。它能够提供日常数据分析，文件处理等功能。[2015年出现的十大流行Python库](http://codingpy.com/article/top-10-django-libraries-started-in-2015/) 。
  * [Odoo](https://sourceforge.net/projects/greenopenerp/files/) - 前OpenERP，开源的ERP和电子商务系统、CRM，功能强大。[官网](https://www.odoo.com/)
 
@@ -78,7 +80,7 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
 ========
 #### 网络相关
  * [aiohttp](https://github.com/KeepSafe/aiohttp) - aiohttp是一个为 asyncio 提供了简洁易用的 HTTP 客户端和服务器的库。
- * [Requests](https://github.com/kennethreitz/requests/) - Requests是python的一个HTTP客户端库，跟urllib，urllib2类似。
+ * [Requests](https://github.com/kennethreitz/requests/) - Requests是python的一个HTTP客户端库，跟urllib，urllib2类似，[官网](http://www.python-requests.org/en/latest/) ， [requests 源码阅读](https://github.com/wangshunping/read_requests)。
  * [youtube-dl](https://github.com/rg3/youtube-dl//) - 一个可从YouTube等网站下载视频的开源神器,采用Python开发，支持多个OS平台，支持众多视频网站国内优酷、土豆、新浪和搜狐，国外YouTube等赫然在列。
  * [ppmessage](https://github.com/PPMESSAGE/ppmessage) - 皮皮消息，即插即用，在线客服，移动应用内即时通讯，私有的·微信·，自建的·钉钉·，开源，纯Python实现。
  * [uvloop](https://github.com/MagicStack/uvloop) - 一个完整的asyncio事件循环的替代品，它建立在libuv基础之上，由Cython编写而成。性能非常高！
@@ -135,6 +137,7 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
  * [python-goose](https://github.com/grangier/python-goose/) - Python-Goose用Python重写，依赖了Beautiful Soup。给定一个文章的URL, 获取文章的标题和内容很方便。
  * [pyspider](https://github.com/binux/pyspider) - PySpider：一个国人编写的强大的网络爬虫系统并带有强大的WebUI。采用Python语言编写，分布式架构，支持多种数据库后端，强大的WebUI支持脚本编辑器，任务监视器，项目管理器以及结果查看器。[demo地址](http://demo.pyspider.org/),[网络爬虫剖析，以Pyspider为例](http://python.jobbole.com/81109/) ， [Scrapy 示例 —— Web 爬虫框架](http://python.jobbole.com/84237/) 。
  * [PyQuery](https://github.com/gawel/pyquery) - 是 Python 仿照 jQuery 的严格实现。语法与 jQuery 几乎完全相同，所以不用再去费心去记一些奇怪的方法了。[python爬虫神器PyQuery的使用方法](http://python.jobbole.com/85222/)。
+ * [distribute_crawler](https://github.com/gnemoug/distribute_crawler) - 使用scrapy,redis,mongodb,graphite实现的一个分布式网络爬虫。
 
 ========
 #### 测试与代码分析审核
@@ -147,9 +150,14 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
  * [ReviewBoard](https://www.reviewboard.org) - Review Board:在线代码审核工具，它所提供的应用程序可以支持代码审查流程。
  * [Infer](https://github.com/facebook/infer) - Infer是Facebook最新开源的静态程序分析工具，用于在发布移动应用之前对代码进行分析，找出潜在的问题，包括 Android 、iOS等等。
  * [voltron](https://github.com/snare/voltron/) - Python 实现的黑客调试器前端。
+ * [Pympler](https://pythonhosted.org/Pympler/) - Pympler一个很棒的内存统计调试模块，实时监控Python web 应用的内存使用量，能walk你的进程堆,并报告所有Python分配对象的类型,个数和以bytes单位的大小.[使用介绍](http://python.freelycode.com/contribution/detail/97)。
+ * [Brakeman](https://github.com/presidentbeef/brakeman) - 一个开源静态分析工具，负责检查Ruby on Rails应用程序的安全漏洞。
+ * [colorama](https://github.com/tartley/colorama) - 为Python终端输出增加颜色,可以向文本增加颜色或者背景颜色。
+ * [Blessings](https://github.com/erikrose/blessings) - 一个轻量级的文本终端输入颜色改变库。
+ * [termcolor](https://github.com/hfeeki/termcolor) - 一个python的终端输出文本颜色改变的[模块](https://pypi.python.org/pypi/termcolor)。
 
 ========
-#### 密码破解相关
+#### 安全与破解相关
  * [ibrute](https://github.com/hackappcom/ibrute) - 一个攻击iCloud账户的Python脚本,2014年很多明星的账号就是被这个脚本攻破的，苹果已经修改这个漏洞了。
  * [bruteforce_py](https://github.com/rischanlab/bruteforce_py) - 暴力破解脚本，ssh bf, wordpress bf, cpanel bf, mysql bf, etc ... 可以说是暴力破解大全。
  * [keychain-bruteforce](https://github.com/ziman/keychain-bruteforce) - 暴力破解MAC OS X 的密码管理。
@@ -160,6 +168,9 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
  * [enjarify](https://github.com/google/enjarify) - 可代替dex2jar的dex Android反编译工具。[使用教程](https://segmentfault.com/a/1190000004996344)
  * [featherduster](https://github.com/nccgroup/featherduster) - 使用Python编写的自动、模块化的密码分析工具。
  * [python-nmap](http://xael.org/pages/python-nmap-en.html) - 是一个用来帮助用户使用 nmap 端口扫描器的 Python 库，可让用户轻松操作 nmap 扫描结果、自动扫描和生成报告。
+ * [pyinstallerextractor](https://sourceforge.net/projects/pyinstallerextractor/) - 使用pyinstxtractor.py 脚本可以用来提取pyinstall打包的exe文件的内容，脚本同时也可以提取出可执行文件中的pyz文件的内容。 
+ * [cuckoosandbox](https://github.com/cuckoosandbox/cuckoo) - cuckoo sandbox:是一个自动动态恶意软件分析系统。你可以将任何可疑文件丢给它，Cuckoo会在几秒内为你反馈一个详细结果，概括此类文件在在孤立环境中执行时的活动。
+ * [BeEF](https://github.com/beefproject/beef) - BeEF是The Browser Exploitation Framework的缩写，它是一个 专注网页浏览器的渗透测试工具。
 
 ========
 #### 图表及图像相关
@@ -167,6 +178,8 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
  * [Scikit-image](http://scikit-image.org) - 一组用于图像处理的算法的集合，使图像处理任务如模糊，增强对比度，缩放只需要一些函数调用就可以完成。
  * [PIL](http://www.pythonware.com/products/pil/) - PIL （Python Imaging Library）是 Python 中最常用的图像处理库。
  * [prettytable](https://github.com/lmaurits/prettytable) - 让你能够在终端中画出漂亮的ascii表格，它支持多种数据源。
+ * [pytesseract](https://github.com/madmaze/pytesseract) - 一个很好用图像识别的工具，主要用于识别验证码。
+ * [fuck12306](https://github.com/andelf/fuck12306) - 12306 图片验证码识别测试。
 
 ========
 #### 运维相关
@@ -188,6 +201,12 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
  * [ZStack](https://github.com/zstackorg/zstack) - 开源IaaS软件,已经提供了大部分IaaS的基本功能，包括：虚拟机管理，存储卷管理，存储卷快照，各种网络服务（DHCP、DNS、SNAT、EIP、PortForward以及Security Group）。[ZStack使用、OpenStack、CloudStack比较](http://www.oschina.net/p/zstack)
  * [Flocker](https://github.com/ClusterHQ/flocker) - Flocker可轻松实现Docker容器及其数据的管理。这是一个数据卷管理器和多主机的 Docker 集群管理工具。
  * [Fig](https://github.com/docker/compose) - Fig 主要用来跟 Docker 一起来构建基于 Docker 的复杂应用，Fig 通过一个配置文件来管理多个Docker容器，非常适合组合使用多个容器进行开发的场景。
+ * [sh](http://amoffat.github.io/sh/) - sh是一个成熟的Python子进程接口，允许像调用函数一样调用任何程序。超级好用。
+ * [Watchdog](http://pythonhosted.org/watchdog/) - Watchdog是一个跨平台的Python库和shell工具，可以监视文件系统事件。超级好用，容易上手。
+ * [Structlog](http://www.structlog.org/en/stable/) - Structlog是一个先进的日志处理器。他可以和任何现存的日志记录工具相集成，并包装了Python标准库。你可以构建定制的记录工具，根据你的需要增加上下文，保证你的日志一致、可读。
+ * [plan](https://github.com/fengsp/plan) - 一个用Python编写的定时任务管理工具。
+ * [tox](http://testrun.org/tox/latest/) - 一个提供自动化打包，测试和发布的Python软件的工具，可以用于控制台或者基础到你的持续构建平台，也是一个通用的virtualenv管理和测试命令行工具。
+ * [Murder](https://github.com/lg/murder) - Twitter Murder在BitTornado的基础上开发而成，由Python和Ruby两种编程语言混合而成，能够在大规模的服务器集群中快速部署代码更新。
 
 ========
 #### 树莓派
@@ -271,11 +290,17 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
  * [Pritunl](https://github.com/pritunl/pritunl) - 一款免费开源的VPN平台软件，让用户迅速搭建VPN服务；采用OpenVPN 代理方式，提供了API供高级开发者使用，同时还针对不同平台和不同VPS供应商提供了详尽的安装使用说明。
  * [OpenCC](https://github.com/BYVoid/OpenCC) - 一个开源的中文简繁转换项目，致力于制作高质量的基于统计预料的简繁转换词库。还提供函数库(libopencc)、命令行简繁转换工具、人工校对工具、词典生成程序、在线转换服务及图形用户界面。
  * [moviepy](https://github.com/Zulko/moviepy) - Moviepy是用来做Python视频编辑的模块：剪切，合并，插入标题，视频混合，视频处理，创建效果。可以读写大多数的音视频格式，支持三个主流的操作系统，支持Python2/3。
- * [delorean](https://github.com/myusuf3/delorean) - delorean提供了一个相比于datetime和pytz的更好的抽象，让你处理时间更容易。它有很多有用的处理时区的特性，标准化时区或者从一个时区改变到另外一个时区。
+ * [delorean](https://github.com/myusuf3/delorean) - delorean提供了一个相比于datetime和pytz的更好的抽象，让你处理日期和时间更容易。它有很多有用的处理时区的特性，标准化时区或者从一个时区改变到另外一个时区。[官网](http://delorean.readthedocs.io/en/latest/)。
  * [swig](https://github.com/swig/swig) - 是一个非常优秀的开源工具，支持您将 C/C++ 代码与任何主流脚本语言相集成,包括 Ruby、Perl、Tcl 和 Python。[swig实现Python和C的互联](http://fangs.in/post/python/2015-07-27)。
  * [yagmail](https://github.com/kootenpv/yagmail) - 发送复杂邮件,发送富文本邮件、发送邮件附件以及使用邮件模板。[使用教程](http://mp.weixin.qq.com/s?__biz=MjM5NzU0MzU0Nw==&mid=2651370295&idx=1&sn=18d4b71ec100ca043c20cad612eb3f5e&scene=0#wechat_redirect)
  * [pypub](https://github.com/wcember/pypub) - 用来快速创建epub文件而不必考虑epub规范的复杂性。
- * [Python 黑帽编程大纲](https://zhuanlan.zhihu.com/p/21658243) - Python 黑帽编程大纲
+ * [lxml](http://lxml.de/) - lxml联合了libxml2和libxslt。如果你要处理XML或HTML，lxml是最好的选择。
+ * [Docopt](http://docopt.org/) - 忘了optparse和argparse吧，使用docstring来构建优雅的、高可读性、复杂（如果你有这个需要）的命令行界面。这是2013年诞生的最好的库。
+ * [PEW](https://github.com/berdario/pew/) - PEW 是一套管理多个虚拟环境的工具，在bash，zsh，fish和powershell上完美运行。
+ * [social-oauth](https://github.com/yueyoum/social-oauth) - 为中国大陆开放了OAuth2认证的网站提供Python接口。
+ * [snownlp](https://github.com/isnowfy/snownlp) - 是一个python写的类库，可以方便的处理中文文本内容，是受到了TextBlob的启发而写的一个方便处理中文的类库。
+ * [jieba](https://github.com/fxsjy/jieba) - “结巴”中文分词,做最好的 Python 中文分词组件。
+ * [vnpya](https://github.com/vnpy/vnpya) - vn.py - 基于python的开源交易平台开发框架。
 
 ========
 #### 博客与播客及书籍文档
@@ -290,7 +315,7 @@ python资源集合，持续更新。。。 [python 中文学习大本营](http:/
 ========
 #### 好的文章
  * [使用Pandas和Matplotlib分析Tweets](https://github.com/ictar/pythondocument/blob/master/Science%20and%20Data%20Analysis/Matplotlib%E6%95%99%E7%A8%8B%20-%20%E7%BB%98%E5%88%B6%E6%8F%90%E5%88%B0Trump%2C%20Clinton%20%26%20Sanders%E7%9A%84%E6%8E%A8%E7%89%B9.md) - 使用Pandas和Matplotlib分析Tweets。
-
+ * [Python 黑帽编程大纲](https://zhuanlan.zhihu.com/p/21658243) - Python 黑帽编程大纲
 
 ========
 #### 他人总结
